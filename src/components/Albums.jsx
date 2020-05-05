@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AlbumList = ({  name, albums }) => (
+const AlbumList = ({ name, albums }) => (
 
   <figure style={{ margin: '1em' }}>
     <section>
@@ -11,7 +11,7 @@ const AlbumList = ({  name, albums }) => (
         <ul>
           {albums}
         </ul>
-        <a href={profileUrl} target="_blank" rel="noopener noreferrer">Profile</a>
+        <a href={albumUrl} target="_blank" rel="noopener noreferrer">Albums</a>
       </div>
     </section>
   </figure>

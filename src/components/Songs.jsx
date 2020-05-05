@@ -1,8 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-Const Search = {
+const Songs = ({ title }) => (
+  <ul>
+    {title}
+  </ul>
+);
 
+Songs.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
+};
 
-}
-
-export default Search
+export default Songs;
