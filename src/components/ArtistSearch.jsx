@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ArtistSearch = ({ text, onChange, onSubmit, inputName = 'text', buttonText = 'Submit' }) => (
+const ArtistSearch = ({ artistName, onChange, onSubmit }) => (
   <form onSubmit={onSubmit}>
-    <input type='text' name={inputName} value={text} onChange={onChange} />
-    <button variant='primary'>{buttonText}</button>
+    <input type='text' 
+      name={artistName} 
+      value={artistName} 
+      onChange={onChange} />
+    <button>Find Groovy Music</button>
   </form>
 );
 
 ArtistSearch.propTypes = {
-  text: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
-  inputName: PropTypes.string,
-  buttonText: PropTypes.string
+  artistName: PropTypes.string,
 };
 
 export default ArtistSearch;
