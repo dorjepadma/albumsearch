@@ -11,17 +11,17 @@ export const fetchAlbums = artistId => {
   return fetch(`http://musicbrainz.org/ws/2/release?artist=${artistId}&fmt=json`)
     .then(res => res.json())
     .then(json => json.releases.map(release => ({
-      releaseId: release.id,
-      releaseTitle: release.title,
-      releaseDate: release.date
+      id: release.id,
+      title: release.title,
+      date: release.date
     })));
 };
 export const fetchSongs = releaseId => {
   return fetch(`http://musicbrainz.org/ws/2/recording?release=${releaseId}&fmt=json`)
     .then(res => res.json())
     .then(json => json.recordings.map(song => ({
-      songId: song.id,
-      songTitle: song.title
+      id: song.id,
+      title: song.title
     })));
 };
 export const fetchLyrics = (artistName, songTitle) => {
