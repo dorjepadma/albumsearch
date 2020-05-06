@@ -5,15 +5,11 @@ exports[`Controls component renders App 1`] = `
   onSubmit={[Function]}
 >
   <input
-    name="text"
     onChange={[Function]}
     type="text"
-    value="Prince"
   />
-  <button
-    variant="primary"
-  >
-    Submit
+  <button>
+    Find Groovy Music
   </button>
 </form>
 `;

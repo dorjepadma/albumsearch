@@ -4,7 +4,12 @@ import ArtistSearch from './ArtistSearch';
 
 describe('Controls component', () => {
   it('renders App', () => {
-    const wrapper = shallow(<ArtistSearch text="Prince" onChange={() => {}} onSubmit={() => {}} />);
+    const wrapper = shallow(<ArtistSearch 
+      text='Prince' 
+      handleChange={() => {}} 
+      onSubmit={() => {}}
+      button='find groovy music' />);
+      
     expect(wrapper).toMatchSnapshot();
   });
 });
