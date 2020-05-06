@@ -14,7 +14,6 @@ const ArtistDisplay = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    console.log(artistSearch);
     fetchArtist(artistSearch)
       .then(artist => setArtist(artist));
   };
